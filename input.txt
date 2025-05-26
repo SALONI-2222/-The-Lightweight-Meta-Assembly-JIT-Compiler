@@ -1,0 +1,131 @@
+int add(int a, int b) {
+    return a + b;
+}
+
+int multiply(int x, int y) {
+    int result = x * y;
+    return result;
+}
+
+int subtract(int x, int y) {
+    return x - y;
+}
+
+int divide(int x, int y) {
+    if (y == 0) return 0;
+    return x / y;
+}
+
+int mod(int x, int y) {
+    return x % y;
+}
+
+int main() {
+    int a = 2 + 3;
+    int b = (4 + 5) * 6;
+    int c = 1 + 2 + 3;
+
+    int x = 10;
+    x += 5;
+    x -= 3;
+    x *= 2;
+    x /= 4;
+    x %= 3;
+    x <<= 1;
+    x >>= 1;
+    x &= 6;
+    x |= 3;
+    x ^= 2;
+
+    int y = 0;
+    y++;
+    ++y;
+    y--;
+    --y;
+
+    int d = a + b;
+    int e = a - b;
+    int f = a * b;
+    int g = a / b;
+    int h = a % b;
+
+    int i = (a > b) && (b > 0);
+    int j = (a < b) || (b != 0);
+
+    int k = -a;
+    int l = !0;
+    int m = ~a;
+    int n = a & b;
+
+    int shl = a << 2;
+    int shr = b >> 1;
+
+    int t = (a > b) ? a : b;
+
+    int arr[5];
+    arr[0] = 10;
+    arr[1] = 20;
+    arr[2] = arr[0] + arr[1];
+    arr[3] = add(arr[0], arr[1]);
+    arr[4] = multiply(arr[0], 2);
+    print(arr[2]);
+    print(arr[3]);
+    print(arr[4]);
+
+    int sum = add(3, 4);
+    int product = multiply(3, 4);
+    int difference = subtract(10, 6);
+    int quotient = divide(8, 2);
+    int remainder = mod(8, 3);
+    print(sum);
+    print(product);
+    print(difference);
+    print(quotient);
+    print(remainder);
+
+    if (a > b) {
+        print(a);
+    } else {
+        print(b);
+    }
+
+    int w = 8;
+    while (w > 0) {
+        print(w);
+        w = w - 2;
+    }
+
+    for (int i = 0; i < 5; i++) {
+        print(i);
+    }
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 2; j++) {
+            if (i == j) {
+                print(100);
+            } else {
+                print(200);
+            }
+        }
+    }
+
+    char ch = 'A';
+    print(ch);
+
+    string message = "Hello";
+    print(message);
+
+    float f1 = 3.14;
+    float f2 = 1.5;
+    float f_sum = f1 + f2;
+    float f_product = f1 * f2;
+    print(f_sum);
+    print(f_product);
+
+    int cast_to_int = (int)f1;
+    float cast_to_float = (float)a;
+    print(cast_to_int);
+    print(cast_to_float);
+
+    return sum;
+}
